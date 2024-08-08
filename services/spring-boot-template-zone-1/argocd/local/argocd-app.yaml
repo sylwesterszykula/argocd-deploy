@@ -7,7 +7,7 @@ spec:
   project: default
   source:
     path: services/spring-boot-template-zone-1/kustomize/env/local
-    repoURL: https://github.com/sylwesterszykula/spring-boot-template.git
+    repoURL: https://github.com/sylwesterszykula/argocd-deploy.git
     targetRevision: main
   destination:
     server: https://kubernetes.default.svc
