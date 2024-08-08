@@ -1,0 +1,14 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+namespace: default
+
+resources:
+- deployment.yaml
+
+commonLabels:
+  app: spring-boot-template-zone-1
+
+images:
+- name: sszykula/templates
+  newName: sszykula/templates
+  newTag: 1.0.0

@@ -1,0 +1,14 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: spring-boot-template-zone-1
+  namespace: argocd
+spec:
+  project: default
+  source:
+    path: services/spring-boot-template-zone-1/kustomize/env/local
+    repoURL: https://github.com/sylwesterszykula/spring-boot-template.git
+    targetRevision: main
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: default
