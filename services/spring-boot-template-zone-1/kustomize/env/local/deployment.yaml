@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: spring-boot-template-zone-1
-          image: https://hub.docker.com/repository/docker/sszykula/templates:spring-boot-template-1.0.0
+          image: registry.hub.docker.com/sszykula/templates:spring-boot-template-1.0.0
           imagePullPolicy: Always
           ports:
             - name: http
