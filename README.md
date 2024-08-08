@@ -1,1 +1,1 @@
-# argocd-deploy
+# spring-boot-template
